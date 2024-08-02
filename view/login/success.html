@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Success</title>
+	<link rel="icon" type="image/png" href="../../../../../../images/TL_IMg.png" style="border-radius: 15px;">
+	<link rel="stylesheet" type="text/css" href="../../../../../../css/styles.css">
+	<link href="../../../../../../css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<!------ Navbar --->
+	<header id="navbar">
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<a class="navbar-brand ms-5" href="#" style="color: black; font-weight: 700; font-size: 25px;">
+				TamilLoft
+			</a>
+		</nav>
+		<ul class="nav justify-content-center navbootm">
+			<li class="nav-item"><a class="nav-link" aria-current="page">Registration Page</a></li>
+		</ul>
+	</header>
+	<!-- Login page content --->
+	<div class="container d-flex align-items-center justify-content-center min-vh-100 ">
+		<!-- Login box --->
+		<div
+			class="row border rounded-5 p-3 col-sm-6 col-10 bg-white shadow box-area justify-content-center align-items-center">
+			<!-- Login side img box --->
+			<div class="col-md-6 rounded-4 col-8 d-flex align-items-center  flex-column left-box"
+				style="background: #fff;">
+				<div class="featured-image mb-2 ">
+					<img class="img-fluid mb-2 " src="../../../../../images/success.png"
+						style="width: 240px; border-radius: 15px;">
+				</div>
+				<div class="text-center">
+					<p style="font-weight: 700;" class="mb-4"> Your Registration Success.</p>
+					<p class="mb-5">You will receive further more details on your email address</p>
+				</div>
+				<div class="input-group mb-5" style="width: 100px;">
+					<button class="btn btn-lg btn-primary w-100 fs-6" id="sucesBtn">Done</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		// Ensure the DOM is fully loaded before attaching event listeners
+		document.addEventListener('DOMContentLoaded', () => {
+			// Get the button element by its ID
+			const successBtn = document.getElementById('sucesBtn');
+			
+			// Check if the element exists
+			if (successBtn) {
+				// Add click event listener to the button
+				successBtn.addEventListener('click', (event) => {
+					event.preventDefault();
+					const currentUrl = window.location.href;
+					localStorage.setItem('success_url', currentUrl);
+					window.location.href = '/index'; // Redirect to '/index' on button click
+				});
+			} else {
+				console.error('Element with id "sucesBtn" not found.');
+			}
+		});
+	</script>
+</body>
+
+</html>

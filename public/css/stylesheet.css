@@ -1,0 +1,97 @@
+.body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+	font-family: "Times New Roman", Times, serif;
+	background: #ffffff;
+}
+
+/*---navbar----*/
+#navbar {
+	position: sticky;
+	top: 0;
+	z-index: 4;
+	background: #fff;
+}
+
+.navbar {
+	margin-inline-start: 110px;
+	margin-inline-end: 110px;
+	margin-top: 10px;
+}
+
+.nav-link {
+	font-size: 15px;
+	font-weight: bold !important;
+	border: 2px solid transparent;
+}
+
+.link {
+
+	font-weight: 600;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.nav-link:hover {
+	border-bottom: 2px solid rgb(126, 158, 201);
+}
+
+/*---main---*/
+section {
+	min-height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+span {
+	font-weight: 600;
+}
+
+.homeimg {
+	background-image: url("../images/bg1.jpg");
+	background-repeat: no-repeat;
+}
+
+.homeimg2 {
+
+	background-color: #dbf3ff;
+	border-radius: 15px;
+	padding: 30px;
+	margin: -10px 0px;
+
+
+}
+
+homeimg2::before {
+	content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+	background-image: url("../images/bg4.jpg");
+	background-repeat: no-repeat;
+	background-size: 10%;
+	background-position: 100% 150%;
+	background-size: cover; /* Adjust to your needs */
+    background-position: center; /* Adjust to your needs */
+    opacity: 0.5; 
+}	
+
+#services {
+	background-image: url("../images/bg3.pNg");
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: 30% 25%;
+
+}
+
+/* Animation */
+#services div div:hover {
+	transition: transform 100ms linear;
+	transform: scale(1.025);
+}

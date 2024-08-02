@@ -1,0 +1,184 @@
+body,
+html {
+	height: 100%;
+	margin: 0;
+}
+
+/*---navbar----*/
+#navbar {
+	position: sticky;
+	top: 0;
+	z-index: 4;
+	background: #fff;
+}
+
+.navbar {
+	margin-inline-start: 110px;
+	margin-inline-end: 110px;
+	margin-top: 10px;
+}
+
+.nav-link {
+	font-size: 15px;
+	font-weight: bold !important;
+	border: 2px solid transparent;
+}
+
+.link {
+
+	font-weight: 600;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.nav-link:hover {
+	border-bottom: 2px solid gray;
+}
+
+
+/* content */
+.royal-blue {
+	color: #4169E1;
+}
+
+.bg-royal-blue {
+	background-color: #4169E1;
+}
+
+.decorative-image {
+	width: 100%;
+	height: auto;
+}
+
+.section-title {
+	border-bottom: 2px solid #4169E1;
+	display: inline-block;
+	padding-bottom: 5px;
+}
+
+/* .card-custom {
+	border: 1px solid #4169E1;
+} */
+
+.btn-custom {
+	background-color: #4169E1;
+	color: #fff;
+	font-weight: 500;
+	font-size: 10px;
+}
+
+.btn-custom:hover {
+	background-color: #365bc8;
+	border-color: #365bc8;
+	color: #fff;
+}
+
+.fade-in {
+	opacity: 0;
+	animation: fadeIn 2s forwards;
+}
+
+.slide-in {
+	transform: translateX(-100%);
+	animation: slideIn 2s forwards;
+}
+
+.zoom-in {
+	transform: scale(0);
+	animation: zoomIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideIn {
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes zoomIn {
+	to {
+		transform: scale(1);
+	}
+}
+
+
+.card-img-top {
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	height: 100vh;
+	object-fit: cover;
+	box-shadow: 0px 0px 10px rgba(180, 175, 175, 0.1);
+	border: #e6ab0a 4px solid;
+	
+
+
+}
+/* card text and desigin */
+.btn-primary {
+	font-size: 11px;
+	margin-left: -30px;
+}
+
+.card-wrapper div p {
+	font-size: 13px;
+}
+
+/* image infos */
+
+#services {
+    background-image: url("../images/bg3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Extra Large Screens (1200px and up) */
+@media (min-width: 1200px) {
+    #services {
+        background-size: 40%;
+        background-position: 45% 30%;
+    }
+}
+
+/* Large Screens (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #services {
+        background-size: 50%;
+        background-position: 50% 30%;
+    }
+}
+
+/* Medium Screens (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    #services {
+        background-size: 60%;
+        background-position: center center;
+    }
+}
+
+/* Small Screens (576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    #services {
+        background-size: 70%;
+        background-position: center center;
+    }
+}
+
+/* Extra Small Screens (less than 576px) */
+@media (max-width: 575px) {
+    #services {
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+
+#services div div:hover {
+	transition: transform 100ms linear;
+	transform: scale(1.025);
+}

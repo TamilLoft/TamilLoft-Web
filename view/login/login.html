@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Registration</title>
+		<link rel="Website Icon" type="png" href="../../images/TL_IMg.png" style="border-radius: 15px;">
+		<link href="../../css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../../css/styles.css">
+		<script defer src="../../js/loginScript.js"></script>
+	</head>
+	<body>
+		<!------nave--->
+		<header id="navbar">
+			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+				<a class=" navbar-brand ms-5" href="#" style="color: black; font-weight: 700; font-size: 25px;">
+				TamilLoft</a>
+			</nav>
+			<ul class="nav justify-content-center navbootm">
+				<li class="nav-item"><a class="nav-link" aria-current="page" href="Login.html">Registration Page</a></li>
+			</ul>
+		</header>
+		<!--Login page contend--->
+		<div class="container d-flex align-items-center justify-content-center min-vh-100 ">
+			<!--Login box--->
+			<div class="row border rounded-5 p-3 bg-white shadow box-area" >
+				<!--Login side img box--->
+				<div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #fff;" >
+					<div class="featured-image mt-sm-5 ">
+						<img class="img-fluid mb-5 " src="/images/TL_Img.png" style="width: 240px;  border-radius: 15px;">
+					</div>
+					<!--<p class="text-center text-warp fs-3" style="color: black; font-weight: 700;">Be Verify</p>
+					<small class="text-center">this web site used to set the image</small>-->
+				</div>
+				<!--Login form box--->
+				<div class="col-md-6 right-box">
+					<div class="row align-items-center">
+						<div class="header-text mb-5">
+							<form  action="/home/register/info/set" method="post">
+								<h2>Registration,</h2>
+								<p>Fill Your Details:</p>
+								<div class="input-group mb-3">
+									<input class="form-control form-control-lg bg-light fs-6" name="name" type="text"placeholder="Name" required>
+								</div>
+								<div class="input-group mb-3">
+									<input class="form-control form-control-lg bg-light fs-6" type="Email" name="email" placeholder="Email addres" required>
+								</div>
+								<div class="input-group mb-2">
+									<input class="form-control form-control-lg bg-light fs-6" type="name" name="whtnumber" placeholder="Whatsapp Number" required>
+								</div>
+								<label for="formFileSm" class="form-label">Resume:</label>
+								<div class="input-group mb-5">
+									<input class="form-control form-control-sm" name="InPutFiles" type="file">
+								</div>
+								<p class="mb-2" id="errorMsa" style="color: red; font-size: 13px;"></p>
+								<div class="input-group mb-3 mt-5">
+									<button class="btn btn-lg btn-primary w-100 fs-6" type="submit" id="loginForm">Register</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
